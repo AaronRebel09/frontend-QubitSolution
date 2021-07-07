@@ -1,0 +1,8 @@
+.example-full-width{
+    display: flex;
+    justify-content: center;
+}
+
+.colorCard{
+    background-color: #bd9a5f;
+}

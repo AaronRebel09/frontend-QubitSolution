@@ -21,6 +21,10 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 // Material Icon
 import {MatIconModule} from '@angular/material/icon';
+import { RegistrationComponentComponent } from './second-page/registration-component/registration-component.component';
+import { LoginComponentComponent } from './second-page/login-component/login-component.component';
+// Material Button
+import {MatButtonModule} from '@angular/material/button';
 
 const appRoutes: Routes = [
   {path: '',
@@ -39,7 +43,9 @@ const appRoutes: Routes = [
     FirstPageComponent,
     SecondPageComponent,
     ThirdPageComponent,
-    FourthPageComponent
+    FourthPageComponent,
+    RegistrationComponentComponent,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FlexLayoutModule,
     MglTimelineModule,
-    MatIconModule 
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

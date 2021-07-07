@@ -44,6 +44,20 @@ article, aside, figure, footer, header, hgroup, section {
   box-sizing: border-box;
 }
 
-.example-full-width {
-  width: 100%;
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+/* .box {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+} */
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
 }
