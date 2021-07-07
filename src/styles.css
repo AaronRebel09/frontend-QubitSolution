@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+.center {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}

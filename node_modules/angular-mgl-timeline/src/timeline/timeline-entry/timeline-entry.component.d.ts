@@ -1,0 +1,28 @@
+import { MglTimelineEntrySideComponent } from './../timeline-entry-side/timeline-entry-side.component';
+import { MglTimelineEntryDotComponent } from './../timeline-entry-dot/timeline-entry-dot.component';
+import { AfterViewInit, EventEmitter, OnDestroy, ElementRef } from '@angular/core';
+import { MglTimelineEntryContentComponent } from '../timeline-entry-content/timeline-entry-content.component';
+import { MglTimelineEntryHeaderComponent } from '../timeline-entry-header/timeline-entry-header.component';
+export declare class MglTimelineEntryComponent implements AfterViewInit, OnDestroy {
+    private elementRef;
+    private subscriptions;
+    focusOnOpen: boolean;
+    set expanded(expanded: boolean);
+    get expanded(): boolean;
+    private _mobile;
+    set mobile(value: any);
+    changed: EventEmitter<boolean>;
+    animationDone: EventEmitter<string>;
+    content: MglTimelineEntryContentComponent;
+    header: MglTimelineEntryHeaderComponent;
+    dot: MglTimelineEntryDotComponent;
+    side: MglTimelineEntrySideComponent;
+    constructor(elementRef: ElementRef);
+    ngAfterViewInit(): void;
+    set alternate(value: boolean);
+    ngOnDestroy(): void;
+    collapse(): void;
+    expand(): void;
+    toggle(event: MouseEvent): void;
+    private containsInPath;
+}

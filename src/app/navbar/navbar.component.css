@@ -1,0 +1,49 @@
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 100;
+}
+
+#rcorners {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+.center-spacer{
+  justify-content: center;
+}
+
+.right-spacer {
+  flex: 1 1 auto;
+}
+
+.containerNavbar{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.footer-widgets {
+  background: #0f96c6;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+}
+.section, .site-footer, .footer-widgets {
+  padding: 3rem 1.5rem;
+}
+article, aside, figure, footer, header, hgroup, section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+.example-full-width {
+  width: 100%;
+}

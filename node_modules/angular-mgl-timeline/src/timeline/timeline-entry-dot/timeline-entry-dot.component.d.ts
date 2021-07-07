@@ -1,0 +1,35 @@
+import { ElementRef, EventEmitter, AfterViewInit, Renderer2, ChangeDetectorRef } from '@angular/core';
+import { AnimationBuilder } from '@angular/animations';
+export declare class MglTimelineEntryDotComponent implements AfterViewInit {
+    private animationBuilder;
+    private elementRef;
+    private renderer;
+    private changeDetectorRef;
+    private document;
+    private _expanded;
+    private _alternate;
+    private _mobile;
+    private initialStyle;
+    private _size;
+    private animation;
+    animationDone: EventEmitter<any>;
+    expandAnimationTiming: string;
+    collapseAnimationTiming: string;
+    clazz: string;
+    set size(size: number);
+    get size(): number;
+    set alternate(alternate: boolean);
+    get alternate(): boolean;
+    set mobile(mobile: boolean);
+    get mobile(): boolean;
+    set expanded(expanded: boolean);
+    get expanded(): boolean;
+    constructor(animationBuilder: AnimationBuilder, elementRef: ElementRef, renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, document: any);
+    ngAfterViewInit(): void;
+    private getCollapsedStyle;
+    private getTransitionStyle;
+    private getExpandedStyle;
+    private animate;
+    private setStyle;
+    private destroyAnimation;
+}
